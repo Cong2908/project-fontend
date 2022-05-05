@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <title>New web sales</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body class="home-1">
+    <!--header -->
+    <header>
+        <div class="header-wraper">
+            <div class="container">
+                <div class="wraper">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logo-image" class="img-fluid">
+                        </a>
+                    </div>
+                    <form class="header-search" id="search-books">
+                        <input type="text" name="search" placeholder="Tìm kiếm sản phẩm">
+                        <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+                    </form>
+                    <div class="right-box">
+                        <div class="right-wrap">
+                            <div class="nav-menu-btn"></div>
+                            <div class="account">
+                                <div class="icon-user">
+                                    <a href="login.html">
+                                        <i class="far fa-user"></i>
+                                    </a>
+                                </div>
+                                <div class="info-user">
+                                    <span class="acc-title">Tài Khoản</span>
+                                    <div class="account-login">
+                                        <a href="register.html">Đăng Ký</a>
+                                        <a href="login.html">Đăng Nhập</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-heart">
+                            <a href="#">
+                                <span class="icon-heart"><i class="fa-regular fa-heart"></i></span>
+                                <sub class="counter">0</sub>
+                            </a>
+                        </div>
+                        <div class="header-cart">
+                            <a>
+                                <span class="icon-cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                                <sub class="bigcounter" id="countsp">0</sub>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mini-cart">
+                    <a href="#" class="shopping-cart-close"></a>
+                    <div class="cart-item-title">
+                        <p>
+                            <span class="cart-count-desc">Giỏ hàng có</span>
+                            <span class="cart-count-item bigcounter" id="countsp1">0</span>
+                            <span class="cart-count-desc">Sản phẩm</span>
+                        </p>
+                    </div>
+                    <ul class="cart-item-loop">
+                        <!-- <li class="cart-item">
+                            <div class="cart-img">
+                                <a href="product.html">
+                                    <img src="images/product-3.jpg" alt="cart-image" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="cart-title">
+                                <h6><a href="product.html" class="cart-item-title">Red T-shirt</a></h6>
+                                <div class="cart-pro-info">
+                                    <div class="cart-qty-price">
+                                        <input class="quantity" type="number" value="1">
+                                        <span class="price-box">300.000<sup>đ</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delete-item-cart">
+                                <i class="fas fa-trash"></i>
+                            </div>
+                        </li> -->
+
+
+
+                    </ul>
+                    <ul class="subtotal-title-area">
+                        <li class="subtotal-info">
+                            <div class="subtotal-titles">
+                                <h6>Tổng Tiền:</h6>
+                                <span class="subtotal-price">0<sup>đ</sup></span>
+                            </div>
+                        </li>
+                        <li class="mini-cart-btns">
+                            <div class="cart-btns">
+                                <a href="#" class="btn btn-style2">Xem Giỏ hàng</a>
+                                <a href="#" class="btn btn-style2">Thanh Toán</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-header">
+                    <div class="nav-bar">
+                        <div class="navbar-left">
+                            <ul class="nav-left">
+                                <li class="close-btn"></li>
+                                <li class="link-title"><a href="index.html">Trang chủ</a></li>
+                                <li class="link-title hoverblock"><a href="product.html">Sản phẩm <i
+                                            class="fas fa-angle-down"></i></a>
+                                    <div class="children-hover">
+                                        <div class="children">
+                                            <ul>
+                                                <li><Span> Đồng hồ</Span></li>
+                                                <li><a href="#">Đồng Hồ Điện Tử</a></li>
+                                                <li><a href="#">Apple Watch</a></li>
+                                                <li><a href="#">Đồng Hồ Kim</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><Span>Trang phục</Span></li>
+                                                <li><a href="#">Âu Phục</a></li>
+                                                <li><a href="#">Váy Dạ Hội</a></li>
+                                                <li><a href="#">Đầm</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><Span>Phụ kiện</Span></li>
+                                                <li><a href="#">Dây Chuyền</a></li>
+                                                <li><a href="#">Bông Tai</a></li>
+                                                <li><a href="#">Nhẫn</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><Span>Giày</Span></li>
+                                                <li><a href="#">ADIDAS</a></li>
+                                                <li><a href="#">NIKE</a></li>
+                                                <li><a href="#">SNEAKER</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="link-title mobile">
+                                    <a href="#collapse-mega-menu1" data-toggle="collapse" class="sublink-title">
+                                        <span class="sp-link-title">Sản Phẩm</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <ul class="dropdown-submenu mega-menu collapse" id="collapse-mega-menu1">
+                                        <li class="megamenu-li parent">
+                                            <a href="#collapse-sub-mega-menu1" data-toggle="collapse"
+                                                class="sublink-title sublink-title-lg">
+                                                <span>Đồng hồ</span>
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-supmenu collapse" id="collapse-sub-mega-menu1">
+                                                <li class="supmenu-li"><a href="product.html">Đồng Hồ Điện Tử</a></li>
+                                                <li class="supmenu-li"><a href="product.html">Apple Watch</a></li>
+                                                <li class="supmenu-li"><a href="product.html">Đồng Hồ Kim</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="megamenu-li parent">
+                                            <a href="#collapse-sub-mega-menu2" data-toggle="collapse"
+                                                class="sublink-title sublink-title-lg">
+                                                <span>Trang Phục</span>
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-supmenu collapse" id="collapse-sub-mega-menu2">
+                                                <li class="supmenu-li"><a href="product.html">Âu Phục</a></li>
+                                                <li class="supmenu-li"><a href="product.html">Váy Dạ Hội</a></li>
+                                                <li class="supmenu-li"><a href="product.html">Đầm</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="megamenu-li parent">
+                                            <a href="#collapse-sub-mega-menu3" data-toggle="collapse"
+                                                class="sublink-title sublink-title-lg">
+                                                <span>Phụ Kiện</span>
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-supmenu collapse" id="collapse-sub-mega-menu3">
+                                                <li class="supmenu-li"><a href="product.html">Dây Chuyền</a></li>
+                                                <li class="supmenu-li"><a href="product.html">Bông Tai</a></li>
+                                                <li class="supmenu-li"><a href="product.html">Nhẫn</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="megamenu-li parent">
+                                            <a href="#collapse-sub-mega-menu4" data-toggle="collapse"
+                                                class="sublink-title sublink-title-lg">
+                                                <span>Giày</span>
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-supmenu collapse" id="collapse-sub-mega-menu4">
+                                                <li class="supmenu-li"><a href="product.html">ADIDAS</a></li>
+                                                <li class="supmenu-li"><a href="product.html">NIKE</a></li>
+                                                <li class="supmenu-li"><a href="product.html">SNEAKER</a></li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="link-title"><a href="#">Về chúng tôi</a></li>
+                                <li class="link-title"><a href="#">Tin tức <span class="hot">Mới</span></a></li>
+                                <li class="link-title"><a href="lienhe.html">Liên hệ</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-right">
+                            <a href="#"><img src="images/icon_contact.png" class="img-fluid" alt="image-icon"></a>
+                            <div class="image-content">
+                                <span class="hot-l">Hotline :</span><br />
+                                <span>0349 737 386 <span class="orrrr">or</span> 0352 676 909</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ----swiper--- -->
+    <div class="swiper client-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide flex-center">
+                <div class="client-img">
+                    <img src="images/banergc3.jpg" alt="">
+                    <div class="client-content">
+                        <h1>Welcome To<br>A New Style</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Unde voluptatibus enim <br> suscipit similique consequuntur praesentium, distinctio pariatur
+                            earum.
+                        </p>
+                        <a href="" class="btn">Explore Now &#8594</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide flex-center">
+                <div class="client-img">
+                    <img src="images/banergc2.jpg" alt="">
+                    <div class="client-content">
+                        <h1>Welcome To<br>A New Style</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Unde voluptatibus enim <br> suscipit similique consequuntur praesentium, distinctio pariatur
+                            earum.
+                        </p>
+                        <a href="" class="btn">Explore Now &#8594</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide flex-center">
+                <div class="client-img">
+                    <img src="images/banergc1.jpg" alt="">
+                    <div class="client-content">
+                        <h1>Welcome To<br>A New Style</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Unde voluptatibus enim <br> suscipit similique consequuntur praesentium, distinctio pariatur
+                            earum.
+                        </p>
+                        <a href="" class="btn">Explore Now &#8594</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="swiper-button-next">
+            <i class="fas fa-chevron-right" style="color: #40D3DC;"></i>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="fas fa-chevron-left" style="color: #40D3DC;"></i>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- ----------products index----------- -->
+    <div class="index-product">
+        <div class="small-container">
+            <p class="indexproduct">Có gì <span>Hot</span> <i class="fas fa-fire"></i></p>
+            <div class="row">
+                <div class="col-3">
+                    <div class="overlay"></div>
+                    <img src="images/category-1.jpg" alt="">
+                    <div class="info">
+                        <h3>Xem Thêm</h3>
+                        <p>How everrything <i class="fas fa-long-arrow-alt-right"></i></p>
+                    </div>
+                    <div class="hidden-items">
+                        <div class="hidden-item">
+                            <i class="fas fa-times hidden-close-btn"></i>
+                            <h2>Sneaker <span>1975</span></h2>
+                            <img src="images/category-1.jpg" alt="">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nisi et,
+                                ores magni blanditiis inventore ad aliquam consectetur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="overlay"></div>
+                    <img src="images/category-2.jpg" alt="">
+                    <div class="info">
+                        <h3>Xem Thêm</h3>
+                        <p>How everrything <i class="fas fa-long-arrow-alt-right"></i></p>
+
+                    </div>
+                    <div class="hidden-items">
+                        <div class="hidden-item">
+                            <i class="fas fa-times hidden-close-btn"></i>
+                            <h2>Sneaker <span>1975</span></h2>
+                            <img src="images/category-2.jpg" alt="">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nisi et,
+                                ores magni blanditiis inventore ad aliquam consectetur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="overlay"></div>
+                    <img src="images/category-3.jpg" alt="">
+                    <div class="info">
+                        <h3>Xem Thêm</h3>
+                        <p>How everrything <i class="fas fa-long-arrow-alt-right"></i></p>
+
+                    </div>
+                    <div class="hidden-items">
+                        <div class="hidden-item">
+                            <i class="fas fa-times hidden-close-btn"></i>
+                            <h2>Sneaker <span>1975</span></h2>
+                            <img src="images/category-3.jpg" alt="">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nisi et,
+                                ores magni blanditiis inventore ad aliquam consectetur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="big-container">
+            <div class="tab-transfer">
+                <span class="tab-item active" onclick="changeProductList('new', this)">Sản Phẩm Mới</span>
+                <span class="tab-item" onclick="changeProductList('trend', this)">Sản Phẩm Bán Chạy</span>
+                <span class="tab-item" onclick="changeProductList('limit', this)">Sản Phẩm Limited</span>
+                <hr id="Indicator">
+            </div>
+            <div id="new">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-1.jpg" alt="">
+                            <img class="additional-image" src="images/product-4.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="products-detail.html" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Red Printed T-Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">400.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-8.jpg" alt="">
+                            <img class="additional-image" src="images/product-7.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="products-detail.html" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Blue T-Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">420.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-10.jpg" alt="">
+                            <img class="additional-image" src="images/product-9.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="products-detail.html" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Red Printed</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">400.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-12.jpg" alt="">
+                            <img class="additional-image" src="images/product-11.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="products-detail.html" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Pink Printed T-Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">401.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-1.jpg" alt="">
+                            <img class="additional-image" src="images/product-4.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="products-detail.html" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">yellow Printed T-Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">402.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-8.jpg" alt="">
+                            <img class="additional-image" src="images/product-7.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="products-detail.html" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Rinted T-Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">410.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-10.jpg" alt="">
+                            <img class="additional-image" src="images/product-9.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="products-detail.html" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Red PShirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">420.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-12.jpg" alt="">
+                            <img class="additional-image" src="images/product-11.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="products-detail.html" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Rewrinted T-Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">200.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+            <div id="trend">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-8.jpg" alt="">
+                            <img class="additional-image" src="images/product-7.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="products-detail.html" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Red Pted T-Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">400.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-10.jpg" alt="">
+                            <img class="additional-image" src="images/product-9.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="#" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Red Printed T-Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">400.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-12.jpg" alt="">
+                            <img class="additional-image" src="images/product-11.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="#" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Red Printed T-Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">400.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-1.jpg" alt="">
+                            <img class="additional-image" src="images/product-4.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="#" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Red Printed T-Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">400.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+            <div id="limit">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-10.jpg" alt="">
+                            <img class="additional-image" src="images/product-9.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="products-detail.html" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Rerinted T-Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">404.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-12.jpg" alt="">
+                            <img class="additional-image" src="images/product-11.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="#" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Red Printed T-Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">400.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-1.jpg" alt="">
+                            <img class="additional-image" src="images/product-4.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="#" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Red Printed T-Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">400.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="img-additional">
+                            <img class="shop-item-image" src="images/product-8.jpg" alt="">
+                            <img class="additional-image" src="images/product-7.jpg" alt="">
+
+                            <div class="pro-icn">
+                                <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                <a href="#" class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title">Red Printed T-Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="price" value="1">
+                            <strike><i>1.000.000 đ</i></strike>
+                            <p class="shop-item-price">400.000 đ</p>
+                        </div>
+                        <input type="number" value="1">
+
+                        <button class="shop-item-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="boder">
+    <div class="home-countdown1">
+        <div class="back-img" style="background-image: url(images/bannertt11.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="deal-content">
+                            <h2>Sale Sập Sàn</h2>
+                            <span class="deal-c">Chương trình khuyễn mãi từ ... đến ...</span>
+                            <a href="#" class="btn btn-style1">Xem Ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------testimonial---------- -->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Reprehenderit vero iure minima consectetur
+                        aliquid saepe eum eveniet soluta corrupti</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/black5.jpg" alt="">
+                    <h3>Hary Potter</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Reprehenderit vero iure minima consectetur
+                        aliquid saepe eum eveniet soluta corrupti</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/black4.jpg" alt="">
+                    <h3>Moke Smith</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Reprehenderit vero iure minima consectetur
+                        aliquid saepe eum eveniet soluta corrupti</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/black1.jpg" alt="">
+                    <h3>TayLor Swit</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- ------------brands-------- -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/logo-godrej.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------footer----------- -->
+    <div class="footer">
+
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and
+                    Benefits of Sport Accessible to the Mary.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Easy Tutorials</p>
+
+    </div>
+    <div class="fullscreen"></div>
+    
+
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <title>Product</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="home-1">
+
+    <header>
+        <div class="header-wraper">
+            <div class="container">
+                <div class="wraper">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logo-image" class="img-fluid">
+                        </a>
+                    </div>
+                    <form class="header-search" id="search-books">
+                        <input type="text" name="search" placeholder="Tìm kiếm sản phẩm">
+                        <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+                    </form>
+                    <div class="right-box">
+                        <div class="right-wrap">
+                            <div class="nav-menu-btn"></div>
+                            <div class="account">
+                                <div class="icon-user">
+                                    <a href="#">
+                                        <i class="far fa-user"></i>
+                                    </a>
+                                </div>
+                                <div class="info-user">
+                                    <span class="acc-title">Tài Khoản</span>
+                                    <div class="account-login">
+                                        <a href="register.html">Đăng Ký</a>
+                                        <a href="login.html">Đăng Nhập</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-heart">
+                            <a href="#">
+                                <span class="icon-heart"><i class="fa-regular fa-heart"></i></span>
+                                <sub class="counter">0</sub>
+                            </a>
+                        </div>
+                        <div class="header-cart">
+                            <a>
+                                <span class="icon-cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                                <sub class="bigcounter" id="countsp">0</sub>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mini-cart">
+                    <a href="#" class="shopping-cart-close"></a>
+                    <div class="cart-item-title">
+                        <p>
+                            <span class="cart-count-desc">Giỏ hàng có</span>
+                            <span class="cart-count-item bigcounter" id="countsp">0</span>
+                            <span class="cart-count-desc">Sản phẩm</span>
+                        </p>
+                    </div>
+                    <ul class="cart-item-loop">
+                        <li class="cart-item">
+                            <div class="cart-img">
+                                <a href="product.html">
+                                    <img src="images/product-3.jpg" alt="cart-image" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="cart-title">
+                                <h6><a href="product.html" class="cart-item-title">Red T-shirt</a></h6>
+                                <div class="cart-pro-info">
+                                    <div class="cart-qty-price">
+                                        <input class="quantity" type="number" value="1">
+                                        <span class="price-box">300.000<sup>đ</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delete-item-cart">
+                                <i class="fas fa-trash"></i>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+                    <ul class="subtotal-title-area">
+                        <li class="subtotal-info">
+                            <div class="subtotal-titles">
+                                <h6>Tổng Tiền:</h6>
+                                <span class="subtotal-price">0<sup>đ</sup></span>
+                            </div>
+                        </li>
+                        <li class="mini-cart-btns">
+                            <div class="cart-btns">
+                                <a href="#" class="btn btn-style2">Xem Giỏ hàng</a>
+                                <a href="#" class="btn btn-style2">Thanh Toán</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-header">
+                    <div class="nav-bar">
+                        <div class="navbar-left">
+                            <ul class="nav-left">
+                                <li class="close-btn"></li>
+                                <li class="link-title"><a href="index.html">Trang chủ</a></li>
+                                <li class="link-title hoverblock"><a href="#">Sản phẩm <i
+                                            class="fas fa-angle-down"></i></a>
+                                    <div class="children-hover">
+                                        <div class="children">
+                                            <ul>
+                                                <li><Span> Đồng hồ</Span></li>
+                                                <li><a href="#">Đồng Hồ Điện Tử</a></li>
+                                                <li><a href="#">Apple Watch</a></li>
+                                                <li><a href="#">Đồng Hồ Kim</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><Span>Trang phục</Span></li>
+                                                <li><a href="#">Âu Phục</a></li>
+                                                <li><a href="#">Váy Dạ Hội</a></li>
+                                                <li><a href="#">Đầm</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><Span>Phụ kiện</Span></li>
+                                                <li><a href="#">Dây Chuyền</a></li>
+                                                <li><a href="#">Bông Tai</a></li>
+                                                <li><a href="#">Nhẫn</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><Span>Giày</Span></li>
+                                                <li><a href="#">ADIDAS</a></li>
+                                                <li><a href="#">NIKE</a></li>
+                                                <li><a href="#">SNEAKER</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="link-title mobile">
+                                    <a href="#collapse-mega-menu1" data-toggle="collapse" class="sublink-title">
+                                        <span class="sp-link-title">Sản Phẩm</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <ul class="dropdown-submenu mega-menu collapse" id="collapse-mega-menu1">
+                                        <li class="megamenu-li parent">
+                                            <a href="#collapse-sub-mega-menu1" data-toggle="collapse"
+                                                class="sublink-title sublink-title-lg">
+                                                <span>Đồng hồ</span>
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-supmenu collapse" id="collapse-sub-mega-menu1">
+                                                <li class="supmenu-li"><a href="product.html">Đồng Hồ Điện Tử</a></li>
+                                                <li class="supmenu-li"><a href="product.html">Apple Watch</a></li>
+                                                <li class="supmenu-li"><a href="product.html">Đồng Hồ Kim</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="megamenu-li parent">
+                                            <a href="#collapse-sub-mega-menu2" data-toggle="collapse"
+                                                class="sublink-title sublink-title-lg">
+                                                <span>Trang Phục</span>
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-supmenu collapse" id="collapse-sub-mega-menu2">
+                                                <li class="supmenu-li"><a href="product.html">Âu Phục</a></li>
+                                                <li class="supmenu-li"><a href="product.html">Váy Dạ Hội</a></li>
+                                                <li class="supmenu-li"><a href="product.html">Đầm</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="megamenu-li parent">
+                                            <a href="#collapse-sub-mega-menu3" data-toggle="collapse"
+                                                class="sublink-title sublink-title-lg">
+                                                <span>Phụ Kiện</span>
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-supmenu collapse" id="collapse-sub-mega-menu3">
+                                                <li class="supmenu-li"><a href="product.html">Dây Chuyền</a></li>
+                                                <li class="supmenu-li"><a href="product.html">Bông Tai</a></li>
+                                                <li class="supmenu-li"><a href="product.html">Nhẫn</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="megamenu-li parent">
+                                            <a href="#collapse-sub-mega-menu4" data-toggle="collapse"
+                                                class="sublink-title sublink-title-lg">
+                                                <span>Giày</span>
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-supmenu collapse" id="collapse-sub-mega-menu4">
+                                                <li class="supmenu-li"><a href="product.html">ADIDAS</a></li>
+                                                <li class="supmenu-li"><a href="product.html">NIKE</a></li>
+                                                <li class="supmenu-li"><a href="product.html">SNEAKER</a></li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="link-title"><a href="#">Về chúng tôi</a></li>
+                                <li class="link-title"><a href="#">Tin tức <span class="hot">Mới</span></a></li>
+                                <li class="link-title"><a href="lienhe.html">Liên hệ</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-right">
+                            <a href="#"><img src="images/icon_contact.png" class="img-fluid" alt="image-icon"></a>
+                            <div class="image-content">
+                                <span class="hot-l">Hotline :</span><br />
+                                <span>0349 737 386 <span class="orrrr">or</span> 0352 676 909</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="section-tb-padding">
+        <div class="container">
+            <div class="all-product">
+                <div class="class-product">
+                    <div class="all-filter">
+                        
+                        <div class="price-filter">
+                            <h4 class="filter-title">Lọc Theo Giá</h4>
+                            <a href="#price-filter" data-toggle="collapse" class="filter-link"><span>Lọc Theo Giá</span><i class="fas fa-angle-down"></i></a>
+                            <ul class="all-price collapse" id="price-filter">
+                                <li class="f-price">
+                                    <input type="checkbox">
+                                    <label>0-100</label>
+                                </li>
+                                <li class="f-price">
+                                    <input type="checkbox">
+                                    <label>100-200</label>
+                                </li>
+                                <li class="f-price">
+                                    <input type="checkbox">
+                                    <label>200-300</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pro-size">
+                            <h4 class="filter-title">Lọc Theo Kích Cỡ</h4>
+                            <a href="#size-filter" data-toggle="collapse" class="filter-link"><span>Lọc Theo Kích Cỡ</span><i class="fas fa-angle-down"></i></a>
+                            <ul class="all-size collapse" id="size-filter">
+                                <li class="choice-size">
+                                    <input type="checkbox">
+                                    <label>10kg</label>
+                                </li>
+                                <li class="choice-size">
+                                    <input type="checkbox">
+                                    <label>7kg</label>
+                                </li>
+                                <li class="choice-size">
+                                    <input type="checkbox">
+                                    <label>5kg</label>
+                                </li>
+                                <li class="choice-size">
+                                    <input type="checkbox">
+                                    <label>4kg</label>
+                                </li>
+                                <li class="choice-size">
+                                    <input type="checkbox">
+                                    <label>3kg</label>
+                                </li>
+                                <li class="choice-size">
+                                    <input type="checkbox">
+                                    <label>2kg</label>
+                                </li>
+                                <li class="choice-size">
+                                    <input type="checkbox">
+                                    <label>1kg</label>
+                                </li>
+                                <li class="choice-size">
+                                    <input type="checkbox">
+                                    <label>0.5kg</label>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="filter-tag">
+                            <h4 class="filter-title">Lọc Theo Thẻ Tags</h4>
+                            <a href="#tags-filter" data-toggle="collapse" class="filter-link"><span>Lọc Theo Thẻ Tags</span><i class="fas fa-angle-down"></i></a>
+                            <ul class="all-tag collapse" id="tags-filter">
+                                <li class="tag"><a href="product.html">Trái Cây</a></li>
+                                <li class="tag"><a href="product.html">Hữu Cơ</a></li>
+                                <li class="tag"><a href="product.html">Đà Lạt</a></li>
+                                <li class="tag"><a href="product.html">Bán Chạy</a></li>        
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product-right">
+                    <div class="grid-4-product">
+                        <div class="grid-list-select">
+                            <ul class="grid-list-selector">
+                                <li>
+                                    <label>Lọc Sản Phẩm</label>
+                                    <select>
+                                        <option>Nổi Bật</option>
+                                        <option>Bán Chạy</option>
+                                        <option>A-Z</option>
+                                        <option>Z-A</option>
+                                        <option>Giá, Thấp đến Cao</option>
+                                        <option>Giá, Cao đến Thấp</option>
+                                        <option>Mới Nhất</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-pro">
+                            <ul class="grid-product">
+                                <li class="grid-items">
+                                    <div class="tred-pro">
+                                        <div class="tr-pro-img">
+                                            <a href="#">
+                                                <img class="img-fluid" src="images/product-1.jpg" alt="pro-img1">
+                                                <img class="img-fluid additional-image" src="images/product-4.jpg" alt="additional image">
+                                            </a>
+                                        </div>
+                                        <div class="Pro-lable">
+                                            <span class="p-text">Mới</span>
+                                        </div>
+                                        <div class="pro-icn">
+                                            <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                            <a href="cart.html" class="w-c-q-icn"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="products-detail.html"  class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3><a href="product.html">Red T-shirt</a></h3>
+                                        <div class="rating">
+                                            <i class="fa fa-star c-star"></i>
+                                            <i class="fa fa-star c-star"></i>
+                                            <i class="fa fa-star c-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="pro-price">
+                                            <span class="new-price">230.000<sup>đ</sup></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="grid-items">
+                                    <div class="tred-pro">
+                                        <div class="tr-pro-img">
+                                            <a href="product.html">
+                                                <img class="img-fluid" src="images/product-2.jpg" alt="pro-img1">
+                                                <img class="img-fluid additional-image" src="images/product-3.jpg" alt="additional image">
+                                            </a>
+                                        </div>
+                                        <div class="Pro-lable">
+                                            <span class="p-text">Mới</span>
+                                        </div>
+                                        <div class="pro-icn">
+                                            <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                            <a href="cart.html" class="w-c-q-icn"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="products-detail.html"  class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3><a href="product.html">Blue T-shirt</a></h3>
+                                        <div class="rating">
+                                            <i class="fa fa-star e-star"></i>
+                                            <i class="fa fa-star e-star"></i>
+                                            <i class="fa fa-star e-star"></i>
+                                            <i class="fa fa-star e-star"></i>
+                                            <i class="fa fa-star e-star"></i>
+                                        </div>
+                                        <div class="pro-price">
+                                            <span class="new-price">236.000<sup>đ</sup></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="grid-items">
+                                    <div class="tred-pro">
+                                        <div class="tr-pro-img">
+                                            <a href="product.html">
+                                                <img class="img-fluid" src="images/product-4.jpg" alt="pro-img1">
+                                                <img class="img-fluid additional-image" src="images/product-5.jpg" alt="additional image">
+                                            </a>
+                                        </div>
+                                        <div class="Pro-lable">
+                                            <span class="p-discount">-20%</span>
+                                        </div>
+                                        <div class="pro-icn">
+                                            <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                            <a href="cart.html" class="w-c-q-icn"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="products-detail.html"  class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3><a href="product.html">Yelow T-Shirt</a></h3>
+                                        <div class="rating">
+                                            <i class="fa fa-star c-star"></i>
+                                            <i class="fa fa-star c-star"></i>
+                                            <i class="fa fa-star c-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="pro-price">
+                                            <span class="new-price">300.000<sup>đ</sup> </span>
+                                            <span class="old-price"><del>1550.000<sup>đ</sup> </del></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="grid-items">
+                                    <div class="tred-pro">
+                                        <div class="tr-pro-img">
+                                            <a href="product.html">
+                                                <img class="img-fluid" src="images/product-11.jpg" alt="pro-img1">
+                                                <img class="img-fluid additional-image" src="image/pro/pro-img-10.jpg" alt="additional image">
+                                            </a>
+                                        </div>
+                                        <div class="Pro-lable">
+                                            <span class="p-text">Mới</span>
+                                        </div>
+                                        <div class="pro-icn">
+                                            <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                            <a href="cart.html" class="w-c-q-icn"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="products-detail.html"  class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3><a href="product.html">Black T-shirt</a></h3>
+                                        <div class="rating">
+                                            <i class="fa fa-star e-star"></i>
+                                            <i class="fa fa-star e-star"></i>
+                                            <i class="fa fa-star e-star"></i>
+                                            <i class="fa fa-star e-star"></i>
+                                            <i class="fa fa-star e-star"></i>
+                                        </div>
+                                        <div class="pro-price">
+                                            <span class="new-price">117.000<sup>đ</sup></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="grid-items">
+                                    <div class="tred-pro">
+                                        <div class="tr-pro-img">
+                                            <a href="product.html">
+                                                <img class="img-fluid" src="images/product-1.jpg" alt="pro-img1">
+                                                <img class="img-fluid additional-image" src="images/product-6.jpg" alt="additional image">
+                                            </a>
+                                        </div>
+                                        <div class="Pro-lable">
+                                            <span class="p-discount">-20%</span>
+                                        </div>
+                                        <div class="pro-icn">
+                                            <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                            <a href="cart.html" class="w-c-q-icn"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="products-detail.html"  class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3><a href="product.html">Burblesdada</a></h3>
+                                        <div class="rating">
+                                            <i class="fa fa-star b-star"></i>
+                                            <i class="fa fa-star b-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="pro-price">
+                                            <span class="new-price">133.000<sup>đ</sup></span>
+                                            <span class="old-price"><del>145.000<sup>đ</sup> </del></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="grid-items">
+                                    <div class="tred-pro">
+                                        <div class="tr-pro-img">
+                                            <a href="product.html">
+                                                <img class="img-fluid" src="images/product-5.jpg" alt="pro-img1">
+                                                <img class="img-fluid additional-image" src="images/product-7.jpg" alt="additional image">
+                                            </a>
+                                        </div>
+                                        <div class="Pro-lable">
+                                            <span class="p-discount">-20%</span>
+                                        </div>
+                                        <div class="pro-icn">
+                                            <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                            <a href="cart.html" class="w-c-q-icn"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="products-detail.html"  class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3><a href="product.html">Pink T-shirt</a></h3>
+                                        <div class="rating">
+                                            <i class="fa fa-star c-star"></i>
+                                            <i class="fa fa-star c-star"></i>
+                                            <i class="fa fa-star c-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="pro-price">
+                                            <span class="new-price">139.000<sup>đ</sup></span>
+                                            <span class="old-price"><del>160.00<sup>đ</sup></del></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="grid-items">
+                                    <div class="tred-pro">
+                                        <div class="tr-pro-img">
+                                            <a href="product.html">
+                                                <img class="img-fluid" src="images/product-8.jpg" alt="pro-img1">
+                                                <img class="img-fluid additional-image" src="images/product-9.jpg" alt="additional image">
+                                            </a>
+                                        </div>
+                                        <div class="Pro-lable">
+                                            <span class="p-discount">-10%</span>
+                                        </div>
+                                        <div class="pro-icn">
+                                            <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                            <a href="cart.html" class="w-c-q-icn"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="products-detail.html"  class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3><a href="product.html">Hạt Nhập Khẩu (50gm)</a></h3>
+                                        <div class="rating">
+                                            <i class="fa fa-star e-star"></i>
+                                            <i class="fa fa-star e-star"></i>
+                                            <i class="fa fa-star e-star"></i>
+                                            <i class="fa fa-star e-star"></i>
+                                            <i class="fa fa-star e-star"></i>
+                                        </div>
+                                        <div class="pro-price">
+                                            <span class="new-price">580.00<sup>đ</sup></span>
+                                            <span class="old-price"><del>590.00<sup>đ</sup></del></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="grid-items">
+                                    <div class="tred-pro">
+                                        <div class="tr-pro-img">
+                                            <a href="product.html">
+                                                <img class="img-fluid" src="images/product-2.jpg" alt="pro-img1">
+                                                <img class="img-fluid additional-image" src="images/product-1.jpg" alt="additional image">
+                                            </a>
+                                        </div>
+                                        <div class="Pro-lable">
+                                            <span class="p-text">Mới</span>
+                                        </div>
+                                        <div class="pro-icn">
+                                            <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                            <a href="cart.html" class="w-c-q-icn"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="products-detail.html"  class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3><a href="product.html">T-shirt</a></h3>
+                                        <div class="rating">
+                                            <i class="fa fa-star b-star"></i>
+                                            <i class="fa fa-star b-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="pro-price">
+                                            <span class="new-price">93.000<sup>đ</sup></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="grid-items">
+                                    <div class="tred-pro">
+                                        <div class="tr-pro-img">
+                                            <a href="product.html">
+                                                <img class="img-fluid" src="images/product-5.jpg" alt="pro-img1">
+                                                <img class="img-fluid additional-image" src="images/product-7.jpg" alt="additional image">
+                                            </a>
+                                        </div>
+                                        <div class="Pro-lable">
+                                            <span class="p-text">Mới</span>
+                                        </div>
+                                        <div class="pro-icn">
+                                            <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                            <a href="cart.html" class="w-c-q-icn"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="products-detail.html"  class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3><a href="product.html">T-shirtuippppppp</a></h3>
+                                        <div class="rating">
+                                            <i class="fa fa-star b-star"></i>
+                                            <i class="fa fa-star b-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="pro-price">
+                                            <span class="new-price">230.000<sup>đ</sup></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="grid-items">
+                                    <div class="tred-pro">
+                                        <div class="tr-pro-img">
+                                            <a href="product.html">
+                                                <img class="img-fluid" src="images/product-9.jpg" alt="pro-img1">
+                                                <img class="img-fluid additional-image" src="images/product-10.jpg" alt="additional image">
+                                            </a>
+                                        </div>
+                                        <div class="Pro-lable">
+                                            <span class="p-text">Mới</span>
+                                        </div>
+                                        <div class="pro-icn">
+                                            <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                            <a href="cart.html" class="w-c-q-icn"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="products-detail.html"  class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3><a href="product.html">Green T-shirt</a></h3>
+                                        <div class="rating">
+                                            <i class="fa fa-star b-star"></i>
+                                            <i class="fa fa-star b-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="pro-price">
+                                            <span class="new-price">200.000<sup>đ</sup></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="grid-items">
+                                    <div class="tred-pro">
+                                        <div class="tr-pro-img">
+                                            <a href="product.html">
+                                                <img class="img-fluid" src="images/product-6.jpg" alt="pro-img1">
+                                                <img class="img-fluid additional-image" src="images/product-7.jpg" alt="additional image">
+                                            </a>
+                                        </div>
+                                        <div class="Pro-lable">
+                                            <span class="p-text">Mới</span>
+                                        </div>
+                                        <div class="pro-icn">
+                                            <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                            <a href="cart.html" class="w-c-q-icn"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="products-detail.html"  class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3><a href="product.html">Red</a></h3>
+                                        <div class="rating">
+                                            <i class="fa fa-star b-star"></i>
+                                            <i class="fa fa-star b-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="pro-price">
+                                            <span class="new-price">180.000<sup>đ</sup></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="grid-items">
+                                    <div class="tred-pro">
+                                        <div class="tr-pro-img">
+                                            <a href="product.html">
+                                                <img class="img-fluid" src="images/product-11.jpg" alt="pro-img1">
+                                                <img class="img-fluid additional-image" src="images/product-12.jpg" alt="additional image">
+                                            </a>
+                                        </div>
+                                        <div class="Pro-lable">
+                                            <span class="p-text">Mới</span>
+                                        </div>
+                                        <div class="pro-icn">
+                                            <a href="#" class="w-c-q-icn"><i class="fa fa-heart"></i></a>
+                                            <a href="cart.html" class="w-c-q-icn"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="products-detail.html"  class="w-c-q-icn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3><a href="product.html">Pted T-shirt</a></h3>
+                                        <div class="rating">
+                                            <i class="fa fa-star b-star"></i>
+                                            <i class="fa fa-star b-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="pro-price">
+                                            <span class="new-price">580.000<sup>đ</sup></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-all-page">
+                <span class="page-title">Hiện thị 1 - 17 của 17 Sản phẩm</span>
+                <div class="page-number">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#"><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and
+                    Benefits of Sport Accessible to the Mary.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Easy Tutorials</p>
+
+    </div>
+    <div class="fullscreen"></div>
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

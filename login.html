@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Login</title>
+    <link rel="stylesheet" href="css/formstyle.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" onsubmit="login()" class="form-login">
+            <h1>Đăng nhập</h1>
+            <div class="form-text">
+                <label for="">Username</label>
+                <input class="username" type="text">
+            </div>
+            <div class="form-text">
+                <label for="">Email</label>
+                <input class="email" type="email">
+            </div>
+            <div class="form-text">
+                <label for="">Password</label>
+                <input class="password" type="password">
+            </div>
+            <button type="submit" class="btn-submit">Đăng nhập</button>
+            <span>Bạn chưa có tài khoảng? Đăng ký <a href="register.html">Tại đây</a></span>
+        </form>
+
+    </div>
+    <script>
+        const formLogin = document.querySelectorAll('.form-text input')
+        const formLabel = document.querySelectorAll('.form-text label')
+        for(let i = 0;i<3;i++){
+            formLogin[i].addEventListener("mouseover",function(){
+                formLabel[i].classList.add("focus")
+            })
+            formLogin[i].addEventListener("mouseout",function(){
+                if(formLogin[i].value == ""){
+                    formLabel[i].classList.remove("focus")
+                }
+            })
+        }
+    </script>
+    <script src="js/form.js"></script>
+    
+</body>
+</html>
