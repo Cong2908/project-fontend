@@ -112,7 +112,6 @@ header .container .wraper{
 
 .header-logo{
     flex-basis: 33.33%;
-    overflow: hidden;
     
 }
 .header-logo a img{
